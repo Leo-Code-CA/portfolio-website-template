@@ -22,7 +22,6 @@
 
         @include media-breakpoint-up(lg) {
             font-size: 1.5rem;
-            display: inline-block;
         }
     }
 }
@@ -49,6 +48,7 @@
 // DISPLAY 3
 .display-3 {
     font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
 
     &--title {
         font-size: 1.2rem;
@@ -60,17 +60,25 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.8rem;
+        }
     }
 
-    @include media-breakpoint-up(lg) {
-        font-size: 1.8rem;
-    }
+    //&--brief {
+
+    //}
 }
 
 // BORDER RIGHT 
 .border-right {
-    border-right: 0.1rem solid $gray-300;
-    height: 100%;
+
+    @include media-breakpoint-up(md) {
+        border-right: 0.1rem solid $gray-300;
+        height: 100%;
+    }
+    
 }
 
 // GRADIENT BG 

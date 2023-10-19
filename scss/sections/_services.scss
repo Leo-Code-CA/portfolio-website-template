@@ -1,24 +1,24 @@
 @use "../custom" as *;
 
 .services {
-    position: relative;
-    padding: 1rem 0;
+    //position: relative;
+    //padding: 2rem 0;
 
     &__content {
         padding: 1rem;
         margin-top: 0rem;
 
         p {
-            font-size: 0.8rem;
+            font-size: 1rem;
 
             @include media-breakpoint-up(lg) {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
 
-        @include media-breakpoint-up(lg) {
-            margin-top: 5rem;
-        }
+        // @include media-breakpoint-up(lg) {
+         //   margin-top: 5rem;
+        //}
 
         .icon {
             font-size: 1.5rem;
@@ -32,5 +32,6 @@
 
     &__pic {
         max-width: 100%;
+        padding: 2rem;
     }
 }

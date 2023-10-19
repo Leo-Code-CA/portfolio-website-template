@@ -2,7 +2,7 @@
 @use "../components/mixins" as *;
 
 .btn-rounded {
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
         display: none;
     };
 
@@ -12,6 +12,7 @@
     margin: 0;
     border: 0.1rem solid rgba($white, 0.6);
     background-color: $white;
+    color: $black;
 
 
     span {
