@@ -2,13 +2,12 @@
 @use '../components/mixins' as *;
 
 .get-started {
-    padding: 4rem 0;
+    padding: 3rem 0;
     background-color: $gray-200;
 }
 
 .cta-info {
-    padding: 3rem;
-    margin: 1rem 0;
+    padding: 2rem;
 
     &__list {
         position: relative;
@@ -30,12 +29,21 @@
 
 // FORM CONTENT
 .form {
-    padding: 3rem;
+    padding: 2rem;
+
+    .form-control {
+        font-size: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.3rem;
+        }
+    }
 
 
     button {
         border: none;
         color: $white;
+        max-height: 60px;
 
         a {
             color: $white;

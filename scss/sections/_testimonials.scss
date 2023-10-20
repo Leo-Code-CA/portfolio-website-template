@@ -20,7 +20,6 @@
         }
 
         .ratings {
-    
 
             i {
                 color: rgba($primary, 0.7);
@@ -35,8 +34,8 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-        border: 0.3rem solid rgba($primary, 0.7);
-        background-color: rgba($white, 0.7);
+        border: 0.3rem solid rgba($primary, 0.3);
+        background-color: $purple-light;
         overflow: hidden;
     }
 
@@ -46,8 +45,8 @@
         text-align: center;
         font-weight: 500;
 
-        h3 {
-            padding-top: 0.8rem;
+        h4 {
+            padding-top: 1rem;
             text-transform: capitalize;
         }
 
